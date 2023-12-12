@@ -24,6 +24,7 @@ a {
 
 img {
     display: block;
+    max-width: 100%;
 }
 
 .container {
@@ -119,6 +120,14 @@ gap: 40px;
 .box-section {
     background-color: #2E2F42;
     padding: 188px 0;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+     url(../images/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .header-title {
@@ -184,6 +193,22 @@ gap: 40px;
 
 .advantages-item {
     width: calc((100% - 72px)/ 4);
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    background-color: #F4F4FD;
+    border-radius: 4px;
+    border: 1px solid #8E8F99;
+    margin-bottom: 8px;
+}
+
+.svg-advantages {
+    background-color: #F4F4FD;
 }
 
 .header-advantages {
@@ -252,6 +277,32 @@ padding: 32px 0;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.ul-icon-team {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.item-team-social {
+    background-color: #4D5AE5;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.item-team-social:hover,
+.item-team-social:focus {
+    background-color: #404BBF;
+}
+
+.svg-team {
+    fill: #F4F4FD;
 }
 
 /* section 4 */
@@ -305,9 +356,15 @@ padding: 32px 0;
 
 /* footer */
 
+
 .footer-box {
     background-color: #2E2F42;
     padding: 100px 0;
+}
+
+.div-footer{
+    display: flex;
+    gap: 120px;
 }
 
 .logo-footer {
@@ -333,4 +390,37 @@ padding: 32px 0;
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
+}
+
+.social-media {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+
+.ul-footer-icon {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-item {
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+background-color: #4D5AE5;
+}
+
+.footer-item:hover,
+.footer-item:focus {
+    background-color: #31D0AA;
+}
+
+.svg-footer {
+    fill: #F4F4FD;
 }
